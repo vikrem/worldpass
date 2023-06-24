@@ -219,8 +219,19 @@ export default function Example() {
                 Watch our demo <span aria-hidden="true">→</span>
               </a>
             </div>
-            <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-              <h1> reee </h1>
+            <div className="block bg-white lg:flex ml-48 w-96 align-middle p-8 rounded-md shadow-lg text-center">
+              <div className="flex-shrink-0 w-full">
+                <p className="text-xl font-medium w-full tracking-tight pb-4">
+                  Log in or Sign up
+                </p>
+                <input type="email" placeholder="me@vitalik.ca" className="w-full p-1 rounded-md bg-slate-100 border border-black h-10"/>
+                <button className="bg-black text-white rounded-md w-full p-1 mt-2 h-10">Log in</button>
+                <hr className="mt-4"/>
+                <p className="m-1 text-slate-400">
+                  or
+                </p>
+                <button className="bg-white text-black rounded-md w-full p-1 mt-2 h-10 border border-black hover:bg-slate-50">Passkey / WorldID</button>
+              </div>
             </div>
           </div>
         </div>
