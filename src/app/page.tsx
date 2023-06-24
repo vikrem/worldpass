@@ -8,6 +8,7 @@ import {
   ServerIcon,
 } from '@heroicons/react/20/solid'
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/react/24/outline'
+import LoginComponent from './LoginComponent'
 
 const primaryFeatures = [
   {
@@ -202,7 +203,7 @@ export default function Example() {
               }}
             />
           </div>
-          <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-40 lg:flex lg:px-8 lg:pt-40">
+          <div className="mx-auto max-w-7xl py-6 pb-24 pt-10 sm:pb-40 lg:flex lg:px-8 lg:pt-40">
             <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
               <img
                 className="h-11"
@@ -219,7 +220,7 @@ export default function Example() {
                 Watch our demo <span aria-hidden="true">→</span>
               </a>
             </div>
-            <div className="block bg-white lg:flex ml-48 w-96 align-middle p-8 rounded-md shadow-lg text-center">
+            <div className="block bg-white lg:flex ml-48 w-96 align-middle p-10 py-24 rounded-lg shadow-lg text-center">
               <div className="flex-shrink-0 w-full">
                 <p className="text-xl font-medium w-full tracking-tight pb-4">
                   Log in or Sign up
@@ -230,7 +231,7 @@ export default function Example() {
                 <p className="m-1 text-slate-400">
                   or
                 </p>
-                <button className="bg-white text-black rounded-md w-full p-1 mt-2 h-10 border border-black hover:bg-slate-50">Passkey / WorldID</button>
+                <LoginComponent />
               </div>
             </div>
           </div>
