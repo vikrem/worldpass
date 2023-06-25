@@ -8,7 +8,6 @@ import {
   ServerIcon,
 } from '@heroicons/react/20/solid'
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/react/24/outline'
-import LoginComponent from './LoginComponent'
 
 const primaryFeatures = [
   {
@@ -226,15 +225,12 @@ export default function Example() {
             <div className="block bg-white lg:flex ml-48 w-96 align-middle p-10 py-24 rounded-lg shadow-lg text-center">
               <div className="flex-shrink-0 w-full">
                 <p className="text-xl font-medium w-full tracking-tight pb-4">
-                  Log in or Sign up
+                  Welcome back, Vikrem!
                 </p>
-                <input type="email" placeholder="me@vitalik.ca" className="w-full p-1 rounded-md bg-slate-100 border border-black h-10" />
-                <button className="bg-black text-white rounded-md w-full p-1 mt-2 h-10">Log in</button>
-                <hr className="mt-4" />
+                <hr className="my-4" />
                 <p className="m-1 text-slate-400">
-                  or
+                  Not you? <a href="#" className="text-slate-600">Change user</a>
                 </p>
-                <LoginComponent />
               </div>
             </div>
           </div>
